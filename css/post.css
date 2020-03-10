@@ -1,0 +1,149 @@
+
+.main_box{
+    min-height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: khaki;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    max-height: 600px;
+    max-width: 900px;
+    /* margin:auto; */
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 660px) {
+    .box{
+    flex-flow: column nowrap;
+    }
+    .right{
+        max-width: initial;
+    }
+}
+.left{
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    flex-grow: 1;
+    min-height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .img_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.left img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+
+}
+.left p{
+    overflow-y: auto;
+    /* width: 600px; */
+}
+
+.right{
+    max-width: 260px;
+    flex-basis: 280px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: lavenderblush;
+}
+.right > *{
+    padding: 0 16px;
+
+}
+.right section.header{
+    background-color: lightgreen;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+.right section.header img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    }
+    .right section.header span{
+    margin-left: 12px;
+    font-weight: 600;
+    flex-grow: 1;
+    
+    }
+
+.right section.main{
+    flex-grow: 1;
+    background-color: lightblue;
+    overflow-y: auto;
+}
+
+.right section.main .text_row{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 3px 0;
+    font-size: medium;
+}
+.right section.main .text_row span.commName{
+    font-weight: 600;
+    word-break: break-all;
+    vertical-align: top;
+} 
+.right section.main .text_row span.commText{
+    font-weight: 400;
+    word-break: break-all;
+
+} 
+.right section.main .text_row form{
+    margin-left: auto;
+}
+.right section.main .text_row form button i{
+    font-size: inherit;
+}
+
+.right section.cta form{
+    background-color: magenta;
+    display: flex;
+}
+.right section.cta form input[type="text"]{
+    flex-grow: 1;
+}
+
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    }
+
+
+@media screen and (max-width: 660px) {
+    .box{
+    flex-flow: column nowrap;
+    max-height: inherit;
+    margin: 30px 10px;
+    }
+    .left{
+        max-height: unset;
+    }
+    .right{
+        max-width: initial;
+    }
+    .left img{
+        width: 100%;
+        height: unset;
+    
+    }
+}

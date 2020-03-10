@@ -1,0 +1,44 @@
+<script src="https://kit.fontawesome.com/030f175b18.js" crossorigin="anonymous"></script>
+<div class="nav_box">
+  <div class="nav_container">
+
+    <div class="logo_container">
+      <a href="main.php">
+        <div class="logo_icon">
+          <i class="fas fa-camera-retro fa-2x fa-fw"></i>
+        </div>
+        <div class="divide"></div>
+        <div class="logo_text">
+          <p>SIMPLEX</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="search_container">
+      <form action="search.php" method="get">
+        <input type="search" name="search" class="search" placeholder="search" />
+        <input type="submit" value="  " class="search_button" />
+      </form>
+    </div>
+
+    <div class="top_right_container">
+      <div class="topRightBtnHolder">
+        <div class="topRightBtn1">
+          <a class="nav_link_explore" href="./gallery.php?global">
+            <i class="far fa-compass fa-2x fa-fw"></i>
+          </a>
+        </div>
+        <div class="topRightBtn">
+          <a class="nav_link_liked" href="./gallery.php?liked">
+            <i class="far fa-heart fa-2x fa-fw"></i>
+          </a>
+        </div>
+        <div class="topRightBtn">
+          <a class="nav_link_user" href="./user.php?uid=<?=$_SESSION['user_id']; ?>">
+            <i class="far fa-user-circle fa-2x fa-fw"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

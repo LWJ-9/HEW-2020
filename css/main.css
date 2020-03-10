@@ -1,0 +1,181 @@
+
+main {
+  background-color: #fafafa;
+width: 100vw;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+/* background-color: #ccc; */
+}
+main > .container {
+width: 1000px;
+padding-top: 60px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+@media screen and (max-width: 900px) {
+main .container {
+width: 100vw;
+flex-direction: column;
+align-items: center;
+}
+}
+main .left {
+  max-width: 90vw;
+  font-size: 25px;
+}
+main .left .left_box{
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+main p.spaceholder1{
+  width: 600px;
+}
+main .right {
+width: 300px;
+font-size: 20px;
+}
+main .left article {
+  background-color: white;
+  max-width: 600px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+main .left .load_more{
+  text-align: center;
+}
+main .left .load_more:active{
+  position: relative;
+  top: 2px;
+}
+main .left article > *:not(.main){
+  padding: 0 16px;
+}
+main .left article .header {
+height: 60px;
+display: flex;
+flex-flow: row nowrap;
+justify-content: start;
+align-items: center;
+}
+main .left article .header img{
+height: 32px;
+width: 32px;
+border-radius: 20%;
+}
+main .left article .header span{
+margin-left: 12px;
+font-weight: 600;
+flex-grow: 1;
+}
+main .left article .main{
+  max-height: 1500px;
+  overflow-y: auto;
+}
+main .left article .main img{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+
+
+}
+main .left article .main p{
+  word-break: break-all;
+  max-height: 1500px;
+  overflow-y: auto;
+}
+main .left article .button_area{
+  margin: 10px 0;
+height: 30px;
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: space-evenly;
+}
+
+main .left article .button_area i{
+  height: 80%;
+  margin-right: 15px;
+}
+main .left article .button_area img{
+height: 80%;
+margin-left: 15px;
+}
+main .left article .button_area .right_icon{
+margin-left: auto;
+margin-right: 15px;
+}
+
+main .left article .liked_text_box{
+padding: 3px 0 0 0;
+}
+
+main .left article .comment .text_row{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 3px 0;
+  font-size: medium;
+}
+main .left article .comment .text_row span.commName{
+font-weight: 600;
+} 
+main .left article .comment .text_row span.commText{
+  font-weight: 400;
+  } 
+main .left article .comment .text_row form{
+  margin-left: auto;
+}
+main .left article .comment .text_row form button i{
+  font-size: inherit;
+}
+form.add_comment{
+display: flex;
+flex-flow: row nowrap;
+padding: 5px;
+border-top: 1px dotted #ccc;
+}
+form.add_comment input[type="text"]{
+  flex-grow: 1;
+  border: none;
+}
+main i{
+  color: rgb(94, 94, 94);
+}
+.right .aside article{
+  background-color: white;
+  padding: 0 16px;
+border: 1px solid #dbdbdb;
+border-radius: 3px;
+margin-bottom: 15px;
+font-size: 20px;
+}
+
+.right .aside article .show_user{
+height: 60px;
+display: flex;
+flex-flow: row nowrap;
+justify-content: start;
+align-items: center;
+flex-grow: 0 1 0;
+}
+.right .aside article .show_user img{
+height: 32px;
+width: 32px;
+border-radius: 20%;
+}
+.right .aside article .show_user span{
+flex-grow: 1;
+}
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}

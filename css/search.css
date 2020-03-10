@@ -1,0 +1,36 @@
+main {
+  display: block;
+}
+.keyword {
+  text-align: center;
+}
+.content {
+  /* background-color: yellow; */
+  width: 90vw;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+  /* display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: row dense;
+  gap: 3px; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+  .item {
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 10px;
+  border: 1px solid lightslategray;
+  min-width: 250px;
+  min-height: 250px;
+  background-color: cyan;
+  background: url(https://via.placeholder.com/250x250) no-repeat ;
+}
+.item p{
+  background: rgba(255, 255, 255, 0.5);
+  word-break:break-all; 
+}
